@@ -9,7 +9,7 @@ class Employee {
 class PermanentEmployee extends Employee {
     void calculateBonus() {
         double bonus = salary * 0.10;
-        int intBonus = (int) bonus; // Explicit casting from double to int
+        int intBonus = (int) bonus;
         System.out.println("Bonus (as integer): " + intBonus);
     }
 }
