@@ -1,0 +1,23 @@
+class Employee {
+    double salary = 50000.0;
+
+    void displaySalary() {
+        System.out.println("Salary: " + salary);
+    }
+}
+
+class PermanentEmployee extends Employee {
+    void calculateBonus() {
+        double bonus = salary * 0.10;
+        int intBonus = (int) bonus; // Explicit casting from double to int
+        System.out.println("Bonus (as integer): " + intBonus);
+    }
+}
+
+public class EmployeeTest {
+    public static void main(String[] args) {
+        PermanentEmployee pe = new PermanentEmployee();
+        pe.displaySalary();
+        pe.calculateBonus();
+    }
+}
